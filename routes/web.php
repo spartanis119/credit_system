@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProcessJsonController;
+use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
 });
+Route::post('/', [ClientController::class , 'processClient'])->name('processingJson');

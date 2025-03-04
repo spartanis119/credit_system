@@ -18,9 +18,10 @@
             <div class="container-fluid">
                 <div class="row mx-auto content_width">
                     <hr class="mt-3">
-                    <div class="col d-flex justify-content-end">
-                        <form method="post" action="#" enctype="multipart/form-data">
-                            <label for="file" class="btn btn-success">
+                    <form method="post" action="{{ route('processingJson') }}" enctype="multipart/form-data">
+                        @csrf
+                        <div class="col d-flex justify-content-end">
+                            <label for="file" class="btn btn-success me-2">
                                 <i class="bi bi-filetype-json fs-4"></i> Adjuntar Archivo
                             </label>
                             <input type="file" id="file" name="file" class="d-none" accept=".json" required>
@@ -29,11 +30,16 @@
                                 <i class="bi bi-upload fs-5"></i> Subir
                             </label>
                             <input id="sendFile" type="submit" class="d-none">
-                        </form>
-                    </div>
+                        </div>
+                        <div class="col d-flex justify-content-end mt-2">
+                            @error('file')
+                                <small style="color:red;">{{ $message }}</small>
+                            @enderror
+                        </div>
+                    </form>
                 </div>
                 <div class="row mx-auto content_width">
-                    <div class="col my-5">
+                    <div class="col my-4">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
