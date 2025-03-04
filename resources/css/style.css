@@ -1,0 +1,15 @@
+/* Adjust content*/
+.content-fixed{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Content Width */
+.content_width{
+    width: 80%;
+}
+/* Ordered List Style */
+.list_style{
+    list-style: none;
+}
