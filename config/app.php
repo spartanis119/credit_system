@@ -54,8 +54,6 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    'asset_url' => env('VITE_ASSET_URL', null),
-
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
