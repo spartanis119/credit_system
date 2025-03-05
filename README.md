@@ -28,7 +28,7 @@ Después de instalar las dependencias, cree un archivo `.env` y modifique las si
 DB_CONNECTION=null
 SESSION_DRIVER=file
 ```
-### Generar clave de aplicación
+### Generar clave de aplicacion
 Ejecute el siguiente comando para generar la clave de la aplicación:
 ```bash
 php artisan key:generate
