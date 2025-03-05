@@ -23,17 +23,5 @@ export default defineConfig({
             host: 'creditsystem-production.up.railway.app',
             protocol: 'wss', // Usa WebSocket seguro
         },
-    },
-    build: {
-        outDir: 'public/build',
-        manifest: true,
-        rollupOptions: {
-            input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-                'resources/scss/app.scss',
-                'resources/css/style.css'
-            ],
-        },
-    },
+    }
 });
