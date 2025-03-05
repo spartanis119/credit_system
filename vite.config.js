@@ -18,12 +18,14 @@ export default defineConfig({
     server: {
         host: '0.0.0.0',
         port: 5173,
+        https: true,
         hmr: {
-            host: 'tu-dominio.railway.app',
+            host: 'creditsystem-production.up.railway.app',
             protocol: 'wss', // Usa WebSocket seguro
         },
     },
     build: {
         outDir: 'public/build',
+        manifest: true
     },
 });
