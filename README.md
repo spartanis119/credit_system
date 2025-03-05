@@ -34,9 +34,12 @@ Ejecute el siguiente comando para generar la clave de la aplicación:
 php artisan key:generate
 ```
 ### Construir los archivos del frontend
-Por último, ejecute el siguiente comando para compilar los archivos necesarios:
+Ejecute el siguiente comando para compilar los archivos necesarios:
 ```bash
 npm run build
 ```
-
+Finalmente, ejecute el siguiente comando para iniciar el servidor local:  
+```bash
+php artisan serve
+```
 
